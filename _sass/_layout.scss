@@ -1,0 +1,11 @@
+body {
+  background-color: $black;
+  color: $grey;
+  padding: $padding;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 30% 1fr;
+  padding: $padding 0;
+}

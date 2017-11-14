@@ -1,0 +1,27 @@
+.home {
+  display: grid;
+  height: calc(100vh - #{$padding});
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: calc(80vh - #{$padding}) 1fr;
+
+  .logo {
+    padding-right: 100px;
+    padding-left: 100px;
+
+    img {
+      max-width: 300px;
+    }
+  }
+
+  .logo, header {
+    align-self: center;
+  }
+
+  nav {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column: 1 / 3;
+    align-self: center;
+    text-align: center;
+  }
+}
