@@ -5,9 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>{{ sit.title }}</title>
     {% include analytics.html %}
-    <link href="https://fonts.googleapis.com/css?family=Pirata+One"
-    rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Unica+One"
+    <link
+    href="https://fonts.googleapis.com/css?family=Balthazar|Unica+One"
     rel="stylesheet">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <meta name="viewport" content="width=device-width">
@@ -19,7 +18,9 @@
 
     <div class="home">
       <div class="logo">
-        <img src="./assets/images/logo.svg">
+        <img src="./assets/images/logo.svg" alt="sillouette style image of white
+        collar and X's for braids to represent Wednesday Addams' style in a
+        minimalistic sense">
       </div>
 
       <header>
@@ -29,10 +30,10 @@
       </header>
 
       <nav>
-        <h3><a href="#about">About</a></h3>
-        <h3><a href="#services">Services</a></h3>
-        <h3><a href="#products">Products</a></h3>
-        <h3><a href="#contact">Contact</a></h3>
+        <h4><a class="internal-link" href="#about">About</a></h3>
+        <h4><a class="internal-link" href="#services">Services</a></h3>
+        <h4><a class="internal-link" href="#products">Products</a></h3>
+        <h4><a class="internal-link" href="#contact">Contact</a></h3>
       </nav>
     </div>
 
