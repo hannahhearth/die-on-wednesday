@@ -14,20 +14,41 @@ body {
 }
 
 body {
-  @include padding;
   background-color: $black;
   color: $grey;
   padding: $small-padding;
   width: 100%;
+
+  @media #{$medium-devices} {
+    padding: $medium-padding;
+  }
+
+  @media #{$large-devices} {
+    padding: $large-padding;
+  }
 }
 
 section {
-  @include padding;
-  padding: $medium-padding 0;
+  padding: $small-padding 0 0;
 
+  @media #{$medium-devices} {
+    padding: $medium-padding;
+  }
+
+  @media #{$large-devices} {
+    padding: $large-padding;
+  }
+
+  &:last-of-type {
+    padding-bottom: $small-padding;
+  }
+}
+
+.product__container {
   @media #{$medium-devices} {
     display: grid;
     grid-template-columns: 30% 1fr;
+    grid-gap: $large-padding;
   }
 }
 
@@ -35,4 +56,8 @@ section {
   @media #{$medium-devices} {
     display: none;
   }
+}
+
+.product__image {
+  width: 100%;
 }

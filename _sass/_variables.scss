@@ -9,16 +9,6 @@ $large-padding: 100px;
 $medium-devices: "screen and (min-width: 415px)";
 $large-devices: "screen and (min-width: 769px)";
 
-@mixin padding {
-  @media #{$medium-devices} {
-    padding: $medium-padding;
-  }
-
-  @media #{$large-devices} {
-    padding: $large-padding;
-  }
-}
-
 @mixin position-at-bottom-of-viewport {
   position: absolute;
   left: 0;

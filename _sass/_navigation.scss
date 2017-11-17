@@ -1,12 +1,18 @@
 .home {
   height: calc(100vh - #{$small-padding} * 2);
   position: relative;
+  margin-bottom: $small-padding;
+
+  @media #{$large-devices} {
+    margin-bottom: $medium-padding;
+  }
 
   @media #{$large-devices} {
     display: grid;
     height: calc(100vh - #{$large-padding} * 2);
     grid-template-columns: 1fr 1fr;
     grid-template-rows: calc(80vh - #{$large-padding} * 2) 1fr;
+    margin-bottom: $large-padding;
   }
 
   .logo {
