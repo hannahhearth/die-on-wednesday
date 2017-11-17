@@ -6,7 +6,7 @@
     <title>{{ sit.title }}</title>
     {% include analytics.html %}
     <link
-    href="https://fonts.googleapis.com/css?family=Balthazar|Unica+One"
+    href="https://fonts.googleapis.com/css?family=Balthazar|Pirata+One"
     rel="stylesheet">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <meta name="viewport" content="width=device-width">
@@ -35,6 +35,8 @@
         <h4><a class="internal-link" href="#products">Products</a></h3>
         <h4><a class="internal-link" href="#contact">Contact</a></h3>
       </nav>
+
+      <h4 class="phone-only hand hand__down">Swipe six feet under</h4>
     </div>
 
     <section>
@@ -49,7 +51,5 @@
     <section>
       {% include contact.html %}
     </section>
-
-    <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
   </body>
 </html>

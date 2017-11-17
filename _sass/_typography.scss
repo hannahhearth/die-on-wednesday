@@ -6,21 +6,33 @@ html {
 h1 {
   color: $white;
   font-family: 'Pirata One', cursive;
-  font-size: 5em;
+  font-size: 3em;
   letter-spacing: 8px;
   margin: 0 0 10px 0;
+
+  @media #{$medium-devices} {
+    font-size: 5em;
+  }
 }
 
 h2 {
   font-family: 'Pirata One', cursive;
   color: $white;
-  font-size: 4.5em;
+  font-size: 3em;
   letter-spacing: 3px;
   margin: 0;
+
+  @media #{$medium-devices} {
+    font-size: 4.5em;
+  }
 }
 
 h3 {
-  font-size: 2em;
+  font-size: 1.5em;
+
+  @media #{$medium-devices} {
+    font-size: 2em;
+  }
 }
 
 h4 {
@@ -47,9 +59,13 @@ a {
 }
 
 p, li {
-  font-size: 1.5em;
+  font-size: 1.2em;
   letter-spacing: 2.5px;
   line-height: 1.2em;
+
+  @media #{$medium-devices} {
+    font-size: 1.5em;
+  }
 }
 
 .flicker {

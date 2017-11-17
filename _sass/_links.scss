@@ -1,4 +1,4 @@
-.internal-link:hover {
+.internal-link:hover, .internal-link:focus {
   &:before, &:after {
     content: "✞";
     position: absolute;
@@ -22,11 +22,24 @@
     background-size: contain;
     display: inline-block;
     height: 80px;
-    margin-left: 40px;
-    -ms-transform: rotate(-90deg); /* IE 9 */
-    -webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
-    transform: rotate(-90deg);
     width: 30px;
     vertical-align: middle;
+  }
+
+  &__right:after {
+    margin-left: 40px;
+    transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg); /* IE 9 */
+    -webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
+  }
+
+  &__down {
+    @include position-at-bottom-of-viewport;
+    text-align: center;
+  }
+
+  &__down:after {
+    display: block;
+    margin: 20px auto;
   }
 }

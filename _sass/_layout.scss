@@ -1,11 +1,38 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html,
 body {
+  height: 100%;
+}
+
+body {
+  @include padding;
   background-color: $black;
   color: $grey;
-  padding: $padding;
+  padding: $small-padding;
+  width: 100%;
 }
 
 section {
-  display: grid;
-  grid-template-columns: 30% 1fr;
-  padding: $padding 0;
+  @include padding;
+  padding: $medium-padding 0;
+
+  @media #{$medium-devices} {
+    display: grid;
+    grid-template-columns: 30% 1fr;
+  }
+}
+
+.phone-only {
+  @media #{$medium-devices} {
+    display: none;
+  }
 }
