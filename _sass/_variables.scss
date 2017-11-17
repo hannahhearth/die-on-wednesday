@@ -10,8 +10,13 @@ $medium-devices: "screen and (min-width: 415px)";
 $large-devices: "screen and (min-width: 769px)";
 
 @mixin position-at-bottom-of-viewport {
-  position: absolute;
-  left: 0;
-  right: 0;
+  position: fixed;
   bottom: 0;
+  right: 0;
+  left: 0;
+
+  @media #{$medium-devices} {
+    right: 20px;
+    left: initial;
+  }
 }
