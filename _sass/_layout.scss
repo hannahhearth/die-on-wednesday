@@ -79,7 +79,6 @@ section {
     display: grid;
     height: calc(100vh - #{$large-padding} * 2);
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: calc(80vh - #{$large-padding} * 2) 1fr;
     margin-bottom: $large-padding;
   }
 
