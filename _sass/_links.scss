@@ -1,20 +1,27 @@
-.internal-link:hover, .internal-link:focus {
-  &:before, &:after {
-    content: "✞";
-    position: absolute;
-  }
+.internal-link {
+  text-decoration: underline;
+}
 
-  &:before {
-    left: -20px;
-  }
+.crosses {
+  &:hover, &:focus {
+    &:before, &:after {
+      content: "✞";
+      position: absolute;
+    }
 
-  &:after {
-    right: -20px;
+    &:before {
+      left: -20px;
+    }
+
+    &:after {
+      right: -20px;
+    }
   }
 }
 
 .hand {
   color: #fff;
+  transition: opacity 0.5s linear;
 
   &::after {
     content: "";
@@ -47,5 +54,4 @@
 
 .hidden {
   opacity: 0;
-  transition: opacity 0.5s linear;
 }
